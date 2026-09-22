@@ -72,7 +72,7 @@ int main(){
         y = 0;
         
     }
-    cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+\n\n";
+
     cout << "The Farthest Point is (" << xmax << ", " << ymax << ") with a " << far << " distance from the origin.";
     return 0;
 }
