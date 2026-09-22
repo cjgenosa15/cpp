@@ -37,8 +37,6 @@ int main(){
         cout << "y-coordinate: ";
         cin >> y;
         cout << "\n";
-        
-        cout << "----------------------------------\n\n";
 
         if(x > 0 && y > 0){
             cout << "The Point is in First Quadrant.\n\n";
@@ -59,6 +57,9 @@ int main(){
             cout << "The Point is in y-axis.\n\n";
         }
         else cout << "The Point is in origin.\n\n";
+
+        cout << "----------------------------------\n\n";
+    
         
         d = sqrt((x*x)+(y*y));
         if(far < d){
