@@ -27,39 +27,38 @@ int main(){
     int xmax = 0, ymax = 0;
     float far = 0;
     float d;
-    cout << "Number of points:";
+    cout << "Number of points: ";
     cin >> num;
     cout << "\n";
     
     for(int i = 0; i < num; i++){
-        cout << "x-coordinate:";
+        cout << "x-coordinate: ";
         cin >> x;
-        cout << "\n";
-        cout << "y-coordinate:";
+        cout << "y-coordinate: ";
         cin >> y;
-        cout << "\n\n";
+        cout << "\n";
         
-        cout << "----------------------------------\n"
+        cout << "----------------------------------\n\n";
 
         if(x > 0 && y > 0){
-            cout << "The Point is in First Quadrant.\n";
+            cout << "The Point is in First Quadrant.\n\n";
         }
         else if(x < 0 && y > 0){
-            cout << "The Point is in Second Quadrant.\n";
+            cout << "The Point is in Second Quadrant.\n\n";
         }
         else if(x < 0 && y < 0){
-            cout << "The Point is in Third Quadrant.\n";
+            cout << "The Point is in Third Quadrant.\n\n";
         }
         else if(x > 0 && y < 0){
-            cout << "The Point is in Fourth Quadrant.\n";
+            cout << "The Point is in Fourth Quadrant.\n\n";
         }
         else if(x != 0 && y == 0){
-            cout << "The Point is in x-axis.\n";
+            cout << "The Point is in x-axis.\n\n";
         }
         else if(x == 0 && y != 0){
-            cout << "The Point is in y-axis.\n";
+            cout << "The Point is in y-axis.\n\n";
         }
-        else cout << "The Point is in origin.\n";
+        else cout << "The Point is in origin.\n\n";
         
         d = sqrt((x*x)+(y*y));
         if(far < d){
@@ -72,7 +71,7 @@ int main(){
         y = 0;
         
     }
-    
+    cout << "=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+\n\n";
     cout << "The Farthest Point is (" << xmax << ", " << ymax << ") with a " << far << " distance from the origin.";
     return 0;
 }
