@@ -23,7 +23,8 @@
 using namespace std;
 
 int main(){
-    int num, x, y, xmax, ymax, quad;
+    int num, x, y;
+    int xmax = 0, ymax = 0;
     float far = 0;
     float d;
     cout << "Number of points:";
@@ -38,6 +39,8 @@ int main(){
         cin >> y;
         cout << "\n\n";
         
+        cout << "----------------------------------\n"
+
         if(x > 0 && y > 0){
             cout << "The Point is in First Quadrant.\n";
         }
