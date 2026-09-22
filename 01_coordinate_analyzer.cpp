@@ -23,15 +23,20 @@
 using namespace std;
 
 int main(){
-    int num, x, y;
+    int num;
+    double x, y;
     int xmax = 0, ymax = 0;
     float far = 0;
     float d;
+    string pointName;
+    string farPoint = " ";
     cout << "Number of points: ";
     cin >> num;
     cout << "\n";
     
     for(int i = 0; i < num; i++){
+        cout << "Point Name: ";
+        cin >> pointName;
         cout << "x-coordinate: ";
         cin >> x;
         cout << "y-coordinate: ";
@@ -64,15 +69,13 @@ int main(){
         d = sqrt((x*x)+(y*y));
         if(far < d){
             far = d;
+            farPoint = pointName;
             xmax = x;
             ymax = y;
         }
         
-        x = 0;
-        y = 0;
-        
     }
 
-    cout << "The Farthest Point is (" << xmax << ", " << ymax << ") with a " << far << " distance from the origin.";
+    cout << "The Farthest Point is " << farPoint << " (" << xmax << "," << ymax <<") with a " << far << " distance from the origin.";
     return 0;
 }
